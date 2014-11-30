@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <com.skyfishjy.library.RippleBackground
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rippleEffect"
+                app:rb_color="#ffffff"
+                app:rb_radius="30dp"
+                app:rb_rippleAmount="6"
+                app:rb_duration="1500"
+                app:rb_scale="7">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/panicBtn"
+                    android:src="@drawable/ic_panic"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:padding="30sp" />
+            </com.skyfishjy.library.RippleBackground>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginBottom="5sp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/circlesBtn"
+                        android:src="@drawable/ic_circles"
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitCenter"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Circles"
+                        android:id="@+id/textView2"
+                        android:textColor="@android:color/white"
+                        android:typeface="monospace"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/missionsBtn"
+                        android:src="@drawable/ic_missions"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="center"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Missions"
+                        android:id="@+id/textView3"
+                        android:textColor="@android:color/white"
+                        android:typeface="monospace"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/userProfileBtn"
+                        android:src="@drawable/ic_profile_main"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitCenter"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Profile"
+                        android:id="@+id/textView4"
+                        android:typeface="monospace"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginBottom="5sp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/settingsBtn"
+                        android:src="@drawable/ic_settings"
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitCenter"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Settings"
+                        android:id="@+id/textView5"
+                        android:textColor="@android:color/white"
+                        android:typeface="monospace"
+                        android:textSize="12sp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

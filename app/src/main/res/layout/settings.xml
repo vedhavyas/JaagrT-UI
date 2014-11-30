@@ -1,0 +1,310 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/black">
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Rescue Settings"
+                    android:textColor="@color/settings"
+                    android:typeface="monospace"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginBottom="5sp"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/settings"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to Set Custom Rescue Message"
+                    android:id="@+id/customMessageBtn"
+                    android:layout_margin="15sp"
+                    android:typeface="monospace"
+                    android:textColor="@drawable/click_color_selector"
+                    android:background="@null"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Send SMS"
+                        android:typeface="monospace"
+                        android:textColor="@color/settings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/sendSMSCheckBox"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Send Email"
+                        android:typeface="monospace"
+                        android:textColor="@color/settings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/sendEmailCheckBox"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Send Push"
+                        android:typeface="monospace"
+                        android:textColor="@color/settings"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:button="@drawable/checkbox_selector"
+                        android:id="@+id/sendPushCheckBox"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Send Location Updates"
+                        android:typeface="monospace"
+                        android:textColor="@color/settings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/sendLocCheckBox"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
+
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Send alerts with in(Tap to change)"
+                        android:typeface="monospace"
+                        android:textColor="@drawable/click_color_selector"
+                        android:clickable="true"
+                        android:id="@+id/sendAlertBtn" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="100 M"
+                        android:id="@+id/sendAlertsTextView"
+                        android:gravity="center"
+                        android:typeface="monospace"
+                        android:textColor="@color/settings" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Rescuer Settings"
+                    android:textColor="@color/settings"
+                    android:typeface="monospace"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginBottom="5sp"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp"
+                    android:background="@color/settings"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Are you a Rescuer "
+                        android:typeface="monospace"
+                        android:textColor="@color/settings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/isRescuerCheckBox"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="true" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Receive SMS"
+                        android:typeface="monospace"
+                        android:textColor="@color/settings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/receiveSMSCheckBox"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Receive Email"
+                        android:typeface="monospace"
+                        android:textColor="@color/settings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/receiveEmailCheckBox"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Receive Push"
+                        android:typeface="monospace"
+                        android:textColor="@color/settings" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/receivePushCheckBox"
+                        android:button="@drawable/checkbox_selector"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
+
+                    <TextView
+                        android:layout_width="230dp"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Receive alerts with in (Tap to change) "
+                        android:typeface="monospace"
+                        android:textColor="@drawable/click_color_selector"
+                        android:clickable="true"
+                        android:id="@+id/receiveAlertBtn"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="100 M"
+                        android:id="@+id/receiveAlertsTextView"
+                        android:gravity="center"
+                        android:typeface="monospace"
+                        android:textColor="@color/settings" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+
+</LinearLayout>

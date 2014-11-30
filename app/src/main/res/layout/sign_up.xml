@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50sp">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with Facebook"
+            android:background="@drawable/facebook_btn"
+            android:id="@+id/fbBtn"
+            android:typeface="monospace"
+            android:textColor="@android:color/white"
+            android:paddingStart="35sp"
+            android:paddingEnd="10sp"
+            android:layout_marginBottom="10sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with Google "
+            android:id="@+id/gPlusBtn"
+            android:typeface="monospace"
+            android:textColor="@android:color/white"
+            android:background="@drawable/google_btn"
+            android:paddingStart="43sp"
+            android:paddingEnd="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or create an account"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_gravity="center_horizontal"
+        android:typeface="monospace"
+        android:textSize="15sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp" />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:id="@+id/nameBox"
+        android:background="@drawable/background_edit_text_top"
+        android:drawableStart="@drawable/ic_profile_small"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="8sp"
+        android:padding="10sp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:ems="10"
+        android:id="@+id/emailBox"
+        android:background="@drawable/background_edit_text_middle"
+        android:drawableStart="@drawable/ic_email"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="8sp"
+        android:padding="10sp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textVisiblePassword"
+        android:hint="Password"
+        android:ems="10"
+        android:id="@+id/passwordBox"
+        android:background="@drawable/background_edit_text_middle"
+        android:drawableStart="@drawable/ic_password_visible"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="8sp"
+        android:padding="10sp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Verify Password"
+        android:ems="10"
+        android:id="@+id/verifyPasswordBox"
+        android:background="@drawable/background_edit_text_middle"
+        android:drawableStart="@drawable/ic_password"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="8sp"
+        android:padding="10sp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        android:ems="10"
+        android:id="@+id/phoneBox"
+        android:background="@drawable/background_edit_text_bottom"
+        android:drawableStart="@drawable/ic_phone"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="8sp"
+        android:padding="10sp"
+        android:typeface="monospace"
+        android:textAlignment="center"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="25sp">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_holder"
+            android:typeface="monospace"
+            android:text="Cancel"
+            android:id="@+id/Login"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_holder"
+            android:typeface="monospace"
+            android:text="Sign Up"
+            android:id="@+id/signUpBtn"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
